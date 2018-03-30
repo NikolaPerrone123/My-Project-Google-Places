@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+import GooglePlacePicker
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var currentLocation : CLLocationManager!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyBNJy7zCIugjsQKRQt7x2yk8hMqqHOc8NU")
+        GMSServices.provideAPIKey("AIzaSyBNJy7zCIugjsQKRQt7x2yk8hMqqHOc8NU")
+        
+        currentLocation = CLLocationManager()
+        currentLocation.distanceFilter = 500
+        currentLocation.startUpdatingLocation()
         return true
     }
 
