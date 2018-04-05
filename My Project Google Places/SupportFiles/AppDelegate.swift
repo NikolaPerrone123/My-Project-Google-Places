@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GMSPlacesClient.provideAPIKey("AIzaSyBNJy7zCIugjsQKRQt7x2yk8hMqqHOc8NU")
-        GMSServices.provideAPIKey("AIzaSyBNJy7zCIugjsQKRQt7x2yk8hMqqHOc8NU")
+        GMSPlacesClient.provideAPIKey(apiKey)
+        GMSServices.provideAPIKey(apiKey)
         
         currentLocation = CLLocationManager()
         currentLocation.distanceFilter = 500

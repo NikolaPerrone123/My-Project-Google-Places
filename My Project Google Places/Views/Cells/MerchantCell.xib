@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MerchantCell" rowHeight="116" id="KGk-i7-Jjw" customClass="MerchantCell" customModule="My_Project_Google_Places" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merchant_logo" translatesAutoresizingMaskIntoConstraints="NO" id="7ld-ml-seP">
+                        <rect key="frame" x="16" y="11" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="O5c-NY-UNp"/>
+                            <constraint firstAttribute="height" constant="88" id="WMU-Nk-9E7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bronx Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dga-FR-KXu">
+                        <rect key="frame" x="122" y="11" width="203" height="16"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111 Washington St, San Diego, Ca 921223 - 1. 5 mi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ln-gN-TeO">
+                        <rect key="frame" x="122" y="35" width="203" height="28"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOT A CFC MERCHANT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-YX-JOP">
+                        <rect key="frame" x="122" y="71" width="203" height="16"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="baX-yF-vzB">
+                        <rect key="frame" x="122" y="92" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="ByV-IQ-n3D"/>
+                            <constraint firstAttribute="height" constant="15" id="n1V-2i-QnE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Want This Merchant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qha-lf-hhU">
+                        <rect key="frame" x="145" y="92" width="180" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-ID-nlv">
+                        <rect key="frame" x="333" y="47" width="23" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="w8d-86-vgN"/>
+                            <constraint firstAttribute="height" constant="22" id="x5c-s6-a6r"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qha-lf-hhU" firstAttribute="top" secondItem="sS7-YX-JOP" secondAttribute="bottom" constant="5" id="1F5-RM-wVm"/>
+                    <constraint firstItem="7ld-ml-seP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="2p6-d7-hz8"/>
+                    <constraint firstItem="dga-FR-KXu" firstAttribute="top" secondItem="7ld-ml-seP" secondAttribute="top" id="AI0-dg-8vl"/>
+                    <constraint firstItem="4ln-gN-TeO" firstAttribute="top" secondItem="dga-FR-KXu" secondAttribute="bottom" constant="8" id="BQd-wF-tKc"/>
+                    <constraint firstItem="sS7-YX-JOP" firstAttribute="top" secondItem="4ln-gN-TeO" secondAttribute="bottom" constant="8" id="DB2-bC-qI7"/>
+                    <constraint firstItem="sS7-YX-JOP" firstAttribute="trailing" secondItem="4ln-gN-TeO" secondAttribute="trailing" id="DXF-cq-z5A"/>
+                    <constraint firstItem="sS7-YX-JOP" firstAttribute="leading" secondItem="4ln-gN-TeO" secondAttribute="leading" id="Eeh-5V-285"/>
+                    <constraint firstItem="dga-FR-KXu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="122" id="EqA-Hc-AuH"/>
+                    <constraint firstItem="Q42-ID-nlv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HLj-Xb-b8p"/>
+                    <constraint firstItem="baX-yF-vzB" firstAttribute="centerY" secondItem="Qha-lf-hhU" secondAttribute="centerY" id="Ju7-qg-S1E"/>
+                    <constraint firstAttribute="trailing" secondItem="Q42-ID-nlv" secondAttribute="trailing" constant="6" id="S1K-nE-Ngm"/>
+                    <constraint firstItem="baX-yF-vzB" firstAttribute="leading" secondItem="7ld-ml-seP" secondAttribute="trailing" constant="18" id="T5p-An-9DC"/>
+                    <constraint firstItem="sS7-YX-JOP" firstAttribute="leading" secondItem="4ln-gN-TeO" secondAttribute="trailing" constant="-203" id="WGw-Z4-gfM"/>
+                    <constraint firstAttribute="bottom" secondItem="7ld-ml-seP" secondAttribute="bottom" constant="16.5" id="ZX0-ES-BoU"/>
+                    <constraint firstItem="Q42-ID-nlv" firstAttribute="leading" secondItem="dga-FR-KXu" secondAttribute="trailing" constant="8" id="a1J-Kv-ZcL"/>
+                    <constraint firstItem="Qha-lf-hhU" firstAttribute="trailing" secondItem="sS7-YX-JOP" secondAttribute="trailing" id="adE-El-a4e"/>
+                    <constraint firstItem="4ln-gN-TeO" firstAttribute="leading" secondItem="dga-FR-KXu" secondAttribute="leading" id="caO-rv-YT4"/>
+                    <constraint firstItem="Qha-lf-hhU" firstAttribute="leading" secondItem="baX-yF-vzB" secondAttribute="trailing" constant="8" id="geU-AL-E3t"/>
+                    <constraint firstItem="7ld-ml-seP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="leX-Vh-ZKF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="4ln-gN-TeO" id="xjC-lI-6as"/>
+                <outlet property="arrow" destination="Q42-ID-nlv" id="jKc-zh-VeX"/>
+                <outlet property="checkMarkIcon" destination="baX-yF-vzB" id="Aga-vK-LfX"/>
+                <outlet property="donationDirective" destination="sS7-YX-JOP" id="sK9-i1-AEl"/>
+                <outlet property="iWantThisMerchant" destination="Qha-lf-hhU" id="NXS-zD-QqP"/>
+                <outlet property="imageOfMerchant" destination="7ld-ml-seP" id="iud-Jj-GOJ"/>
+                <outlet property="name" destination="dga-FR-KXu" id="cZb-oN-VmP"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="90"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_mark" width="12" height="12"/>
+        <image name="merchant_logo" width="120" height="121"/>
+        <image name="right_arrow" width="24" height="24"/>
+    </resources>
+</document>

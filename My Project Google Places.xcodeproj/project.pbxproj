@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4272FAFBB152D5EEBC232275 /* Pods_My_Project_Google_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4715B0901564E6DB93260E48 /* Pods_My_Project_Google_Places.framework */; };
+		8B06A03720725BA00013E5A3 /* GoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A03620725BA00013E5A3 /* GoogleHelper.swift */; };
+		8B06A039207262220013E5A3 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A038207262220013E5A3 /* Merchant.swift */; };
+		8B06A03B207264950013E5A3 /* MerchantListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A03A207264950013E5A3 /* MerchantListVC.swift */; };
+		8B06A03F207265D20013E5A3 /* MerchantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A03D207265D20013E5A3 /* MerchantCell.swift */; };
+		8B06A040207265D20013E5A3 /* MerchantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B06A03E207265D20013E5A3 /* MerchantCell.xib */; };
+		8B39ADBB207513620097DE73 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39ADBA207513620097DE73 /* Utility.swift */; };
+		8B39ADBD20751A760097DE73 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39ADBC20751A760097DE73 /* Constant.swift */; };
+		8B39ADBF20751CD80097DE73 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39ADBE20751CD80097DE73 /* APIClient.swift */; };
 		8BF9834F206E2D62002799D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9834E206E2D62002799D2 /* AppDelegate.swift */; };
 		8BF98351206E2D62002799D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF98350206E2D62002799D2 /* ViewController.swift */; };
 		8BF98354206E2D62002799D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF98352206E2D62002799D2 /* Main.storyboard */; };
@@ -19,6 +27,14 @@
 		251AB312F57B64B17F4E75B1 /* Pods-My Project Google Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Project Google Places.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Project Google Places/Pods-My Project Google Places.release.xcconfig"; sourceTree = "<group>"; };
 		4715B0901564E6DB93260E48 /* Pods_My_Project_Google_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Project_Google_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DEF4B0D57BF8CBAA387DC1 /* Pods-My Project Google Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Project Google Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Project Google Places/Pods-My Project Google Places.debug.xcconfig"; sourceTree = "<group>"; };
+		8B06A03620725BA00013E5A3 /* GoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleHelper.swift; sourceTree = "<group>"; };
+		8B06A038207262220013E5A3 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		8B06A03A207264950013E5A3 /* MerchantListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListVC.swift; sourceTree = "<group>"; };
+		8B06A03D207265D20013E5A3 /* MerchantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantCell.swift; sourceTree = "<group>"; };
+		8B06A03E207265D20013E5A3 /* MerchantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantCell.xib; sourceTree = "<group>"; };
+		8B39ADBA207513620097DE73 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		8B39ADBC20751A760097DE73 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8B39ADBE20751CD80097DE73 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		8BF9834B206E2D62002799D2 /* My Project Google Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Project Google Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF9834E206E2D62002799D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF98350206E2D62002799D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +56,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B06A02D20725A390013E5A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BF98350206E2D62002799D2 /* ViewController.swift */,
+				8B06A03A207264950013E5A3 /* MerchantListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B06A02E20725A460013E5A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B06A038207262220013E5A3 /* Merchant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B06A02F20725A4D0013E5A3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8BF98355206E2D62002799D2 /* Assets.xcassets */,
+				8BF9834E206E2D62002799D2 /* AppDelegate.swift */,
+				8B39ADBC20751A760097DE73 /* Constant.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8B06A03020725A650013E5A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B06A03C207265AE0013E5A3 /* Cells */,
+				8BF98352206E2D62002799D2 /* Main.storyboard */,
+				8BF98357206E2D62002799D2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B06A03320725B770013E5A3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8B06A03620725BA00013E5A3 /* GoogleHelper.swift */,
+				8B39ADBE20751CD80097DE73 /* APIClient.swift */,
+			);
+			name = API;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8B06A03C207265AE0013E5A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B06A03D207265D20013E5A3 /* MerchantCell.swift */,
+				8B06A03E207265D20013E5A3 /* MerchantCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8B39ADB92075134E0097DE73 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8B39ADBA207513620097DE73 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		8BF98342206E2D62002799D2 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +141,12 @@
 		8BF9834D206E2D62002799D2 /* My Project Google Places */ = {
 			isa = PBXGroup;
 			children = (
-				8BF9834E206E2D62002799D2 /* AppDelegate.swift */,
-				8BF98350206E2D62002799D2 /* ViewController.swift */,
-				8BF98352206E2D62002799D2 /* Main.storyboard */,
-				8BF98355206E2D62002799D2 /* Assets.xcassets */,
-				8BF98357206E2D62002799D2 /* LaunchScreen.storyboard */,
+				8B39ADB92075134E0097DE73 /* Utility */,
+				8B06A02E20725A460013E5A3 /* Models */,
+				8B06A03020725A650013E5A3 /* Views */,
+				8B06A02D20725A390013E5A3 /* Controllers */,
+				8B06A03320725B770013E5A3 /* API */,
+				8B06A02F20725A4D0013E5A3 /* SupportFiles */,
 				8BF9835A206E2D62002799D2 /* Info.plist */,
 			);
 			path = "My Project Google Places";
@@ -117,6 +198,9 @@
 		8BF98343206E2D62002799D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					gdf,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Nikola Popovic";
@@ -153,6 +237,7 @@
 				8BF98359206E2D62002799D2 /* LaunchScreen.storyboard in Resources */,
 				8BF98356206E2D62002799D2 /* Assets.xcassets in Resources */,
 				8BF98354206E2D62002799D2 /* Main.storyboard in Resources */,
+				8B06A040207265D20013E5A3 /* MerchantCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +270,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Project Google Places/Pods-My Project Google Places-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/EXTView/EXTView.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/TTSegmentedControl/TTSegmentedControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXTView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSegmentedControl.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,8 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B06A03B207264950013E5A3 /* MerchantListVC.swift in Sources */,
 				8BF98351206E2D62002799D2 /* ViewController.swift in Sources */,
+				8B39ADBB207513620097DE73 /* Utility.swift in Sources */,
+				8B39ADBD20751A760097DE73 /* Constant.swift in Sources */,
 				8BF9834F206E2D62002799D2 /* AppDelegate.swift in Sources */,
+				8B06A03720725BA00013E5A3 /* GoogleHelper.swift in Sources */,
+				8B06A039207262220013E5A3 /* Merchant.swift in Sources */,
+				8B06A03F207265D20013E5A3 /* MerchantCell.swift in Sources */,
+				8B39ADBF20751CD80097DE73 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

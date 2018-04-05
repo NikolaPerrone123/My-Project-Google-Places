@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var appDelegate : AppDelegate!
     var placesClient : GMSPlacesClient!
     var locationManager = CLLocationManager()
+    var listOfImage = [UIImage]()
 
     
     override func viewDidLoad() {
@@ -36,11 +37,9 @@ class ViewController: UIViewController {
     
     @IBAction func pickPlace(_ sender: UIButton) {
         
-        self.placeAutocomplete()
+        self.presentMapWithPiceker()
     }
     
-    
-    // MARK: Some Functions
     
     func presentMapWithPiceker(){
         let config = GMSPlacePickerConfig(viewport: nil)
@@ -55,6 +54,7 @@ class ViewController: UIViewController {
         present(autocompliteController, animated: true, completion: nil)
     }
     
+    // MARK: currentLocation
     func currentLocation(){
         placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
             if let error = error {
@@ -68,6 +68,10 @@ class ViewController: UIViewController {
             if let placeLikelihoodList = placeLikelihoodList {
                 let place = placeLikelihoodList.likelihoods.first?.place
                 if let place = place {
+                    //print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
+                    print("Current Place address \(String(describing: place.formattedAddress))")
+                    print("Current Place attributions \(String(describing: place.attributions))")
+                    print("Current PlaceID \(place.placeID)")
                     self.getPhoto(placeId: place.placeID)
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ")
@@ -75,6 +79,29 @@ class ViewController: UIViewController {
                 }
             }
         })
+    }
+    
+    // MARK: Get Hood Places and images
+    func getHoodPlaces(){
+        placesClient.currentPlace { (placeLikehoodList, error) in
+            if error == nil {
+                if let placeLikeHoodList = placeLikehoodList {
+                    for likelihood in placeLikeHoodList.likelihoods {
+                        
+                        //likelihood.place.
+
+                        let place = likelihood.place
+                        self.getPhoto(placeId: place.placeID)
+                        print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
+                        print("Current Place address \(String(describing: place.formattedAddress))")
+                        print("Current Place attributions \(String(describing: place.attributions))")
+                        print("Current PlaceID \(place.placeID)")
+                    }
+                }
+            } else {
+                print("Some error has occured: \(String(describing: error))")
+            }
+        }
     }
     
     func getPhoto(placeId : String){
@@ -95,6 +122,12 @@ class ViewController: UIViewController {
             if error == nil {
                 //self.placeImage.image = photo
                 // Set image
+                if let photo = photo {
+                    self.listOfImage.append(photo)
+                    print("Number of photo: \(String(describing: self.listOfImage.count))")
+                } else {
+                    print("Number of image is nill")
+                }
             } else {
                 print(error as Any)
             }
@@ -136,6 +169,8 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    // MARK: Search By Auto Complite
     func placeAutocomplete(){
         let filter = GMSAutocompleteFilter()
         
@@ -151,6 +186,7 @@ class ViewController: UIViewController {
             }
             if let results = results {
                 for result in results {
+                    
                     print("Result \(result.attributedFullText) with placeID \(String(describing: result.placeID))")
                 }
             }
